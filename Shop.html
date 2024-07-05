@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="Shop.css">
+</head>
+<body>
+    <h1>The Daily Grind Co.</h1>
+    <div class="container">
+    <div class="products-container">
+        <div class="product">
+            <h2>Grind Americano</h2>
+            <img class=zoom src="c:\Users\joffe\Desktop\FinalProj\images\americano.jpg" height="180px"> <br><br>
+            <p>Price: ₱150.00</p>
+            <button class="zoom"
+            onclick="addToCart ('Grind Americano ()' , 150.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Grind Latte</h2>
+            <img class=zoom src="c:\Users\joffe\Desktop\FinalProj\images\latte.jpg" height="180px"> <br><br>
+            <p>Price: ₱170.00</p>
+            <button class="zoom"
+            onclick="addToCart ('Grind Latte ()' , 170.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Grind Macchiato</h2>
+            <img class=zoom src="c:\Users\joffe\Desktop\FinalProj\images\macchiato.jpg" height="180px"> <br><br>
+            <p>Price: ₱180.00</p>
+            <button class="zoom"
+            onclick="addToCart ('Grind Macchiato ()' , 180.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Grind Cappuccino</h2>
+            <img class=zoom src="c:\Users\joffe\Desktop\FinalProj\images\cappucino.jpg" height="180px"> <br><br>
+            <p>Price: ₱180.00</p>
+            <button class="zoom"
+            onclick="addToCart ('Grind Cappuccino ()' , 180.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+        <h2>Excelsa (500g)</h2>
+        <img class="zoom" src="c:\Users\joffe\Desktop\FinalProj\images\coffee-bean.jpg"> <br><br>
+        <p>Price: ₱1500.00</p>
+        <button class="zoom"
+        onclick="addToCart ('Excelsa (500g)' , 1500.00)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h2>Liberica (500g)</h2>
+        <img class="zoom" src="c:\Users\joffe\Desktop\FinalProj\images\coffee-bean.jpg"> <br><br>
+        <p>Price: ₱1500.00</p>
+        <button class="zoom"
+        onclick="addToCart ('Liberica (500g)' , 1500.00)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h2>Abarica (500g)</h2>
+        <img class="zoom" src="c:\Users\joffe\Desktop\FinalProj\images\coffee-bean.jpg"> <br><br>
+        <p>Price: ₱1500.00</p>
+        <button class="zoom"
+        onclick="addToCart ('Abarica (500g)' , 1500.00)">Add to Cart</button>
+    </div>
+    <div class="product">
+        <h2>Robusta (500g)</h2>
+        <img class="zoom" src="c:\Users\joffe\Desktop\FinalProj\images\coffee-bean.jpg"> <br><br>
+        <p>Price: ₱1500.00</p>
+        <button class="zoom"
+        onclick="addToCart ('Robusta (500g)' , 1500.00)">Add to Cart</button>
+    </div>
+  
+</div>
+
+
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: ₱<span id="total">0.00</span></p>
+            <button class="zoom"
+        onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+
+    <script src="Shop.js"></script>
+</body>
+</html>

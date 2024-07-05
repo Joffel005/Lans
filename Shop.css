@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: Georgia, serif;
+    background-color: #f8f3e9;
+    color: #5b4636;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 55px;
+}
+
+h1, h2{
+    font-family: "Pacifico" , cursive;
+    font-weight: 500;
+    color: #6f4e37;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.product{
+   
+    border: 1px solid #d3c4a8;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff7e6;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product h2{
+    margin: 0 0 10px;
+}
+
+.product p{
+    margin: 0 0 15px;
+}
+
+.product button{
+    background-color: #d2691e;
+    color: white;
+    border-radius: 4px;
+}
+
+.product button:hover{
+    background-color: #b35900;
+}
+
+.product img{
+    width: 100%;
+}
+
+.cart{
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff7e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d3c4a8;
+    
+}
+
+.cart ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #d3c4a8;
+}
+
+.cart li:last-child{
+    border-bottom: none;
+}
+
+.cart button:hover{
+    background-color: #b35900;
+}
+
+.cart p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.cart button.checkout{
+    width: 100%;
+    background-color: #8b4513;
+    margin-top: 10px;
+}
+
+.cart button.checkout:hover{
+    background-color: #6b2f11;
+}
+
+.product img{
+    width: 180px;
+    border-radius: 5px;
+}
+
+body{
+    animation: TransitionIn 0.75s;
+}
+
+@keyframes TransitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.zoom {
+    transition: transform.2s; /* Animation */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
